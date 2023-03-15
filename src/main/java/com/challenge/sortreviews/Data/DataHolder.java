@@ -21,7 +21,7 @@ public class DataHolder {
         //create ObjectMapper instance
         ObjectMapper objectMapper = new ObjectMapper();
 
-        //read JSON file and convert to a customer object
+        //read JSON file and convert to a review object
         File jsonFile = new File("src/main/resources/json/reviews.json");
         Review[] reviews = objectMapper.readValue(jsonFile, Review[].class);
         reviewList.addAll(Arrays.asList(reviews));
