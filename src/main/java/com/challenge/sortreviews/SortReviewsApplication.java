@@ -19,13 +19,5 @@ public class SortReviewsApplication implements CommandLineRunner {
 
     @Override
     public void run(String[] args) throws IOException {
-        //create ObjectMapper instance
-        ObjectMapper objectMapper = new ObjectMapper();
-
-        //read JSON file and convert to a customer object
-        File jsonFile = new File("src/main/resources/json/reviews.json");
-        Review[] reviews = objectMapper.readValue(jsonFile, Review[].class);
-
-        System.out.println(reviews[0]);
     }
 }
