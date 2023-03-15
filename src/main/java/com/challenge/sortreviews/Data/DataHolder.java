@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public class DataHolder {
 
-    public List<Review> reviewList = new ArrayList<>();
+    public static List<Review> reviewList = new ArrayList<>();
 
     @PostConstruct
     public void init() throws IOException {

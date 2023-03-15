@@ -24,7 +24,7 @@ public class Review {
     private int numShares;
     private int rating;
     private String reviewCreatedOn;
-    private String reviewCreatedOnDate;
+    private Date reviewCreatedOnDate;
     private Long reviewCreatedOnTime;
     private Long reviewerId;
     private String reviewerUrl;
@@ -111,11 +111,11 @@ public class Review {
         this.reviewCreatedOn = reviewCreatedOn;
     }
 
-    public String getReviewCreatedOnDate() {
+    public Date getReviewCreatedOnDate() {
         return reviewCreatedOnDate;
     }
 
-    public void setReviewCreatedOnDate(String reviewCreatedOnDate) {
+    public void setReviewCreatedOnDate(Date reviewCreatedOnDate) {
         this.reviewCreatedOnDate = reviewCreatedOnDate;
     }
 
