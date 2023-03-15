@@ -1,11 +1,18 @@
 package com.challenge.sortreviews.model;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
 
+@Getter
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Review {
 
     private Long id;
@@ -17,7 +24,7 @@ public class Review {
     private int numShares;
     private int rating;
     private String reviewCreatedOn;
-    private Date reviewCreatedOnDate;
+    private String reviewCreatedOnDate;
     private Long reviewCreatedOnTime;
     private Long reviewerId;
     private String reviewerUrl;
@@ -31,7 +38,7 @@ public class Review {
     private List<String> tags;
     private String href;
     private String logoHref;
-
+    private List<String> photos;
     public Long getId() {
         return id;
     }
@@ -104,11 +111,11 @@ public class Review {
         this.reviewCreatedOn = reviewCreatedOn;
     }
 
-    public Date getReviewCreatedOnDate() {
+    public String getReviewCreatedOnDate() {
         return reviewCreatedOnDate;
     }
 
-    public void setReviewCreatedOnDate(Date reviewCreatedOnDate) {
+    public void setReviewCreatedOnDate(String reviewCreatedOnDate) {
         this.reviewCreatedOnDate = reviewCreatedOnDate;
     }
 
@@ -216,15 +223,15 @@ public class Review {
         this.logoHref = logoHref;
     }
 
-    public List<Object> getPhotos() {
+    public List<String> getPhotos() {
         return photos;
     }
 
-    public void setPhotos(List<Object> photos) {
+    public void setPhotos(List<String> photos) {
         this.photos = photos;
     }
 
-    private List<Object> photos;
+
 
     @Override
     public String toString() {
