@@ -3,6 +3,7 @@ package com.challenge.sortreviews.service;
 import com.challenge.sortreviews.model.Review;
 
 import java.util.List;
+import java.util.Map;
 
 public interface FilteringService {
     public List<Review> prioritizeByText(List<Review> reviewList);

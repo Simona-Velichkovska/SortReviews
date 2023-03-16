@@ -56,6 +56,7 @@ public class FilterController {
             reviews=this.filteringService.orderByDate(reviews, old);
             System.out.println("Date Newest");
         }
+        //Has to be placed lower if we want to see the ones that have text first
         if(text.equals("Yes")) {
             reviews=this.filteringService.prioritizeByText(reviews);
             System.out.println("Yes");
