@@ -1,6 +1,6 @@
 # SortReviews
 ###EmbedSocial Challenge
-####Requirements:####
+####Requirements:
 Spring Boot
 Java 11 or higher
 
